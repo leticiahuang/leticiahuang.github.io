@@ -36,15 +36,19 @@
         </div>
     </nav>
     <section id="profile">
-        <div class="section _pic_container">
-            <img src="./assets/profile-pic.png" alt="Leticia Huang profile picture" />
+        <div class="section__pic_container">
+            <img src="./assets/profile-pic.png" alt="Leticia Huang profile picture"/>
         </div>
         <div class="section__text">
             <p class="section__text__pi">Hello, I'm</p>
             <h1 class="title">Leticia Huang</h1>
             <p class="section__test_p2">Student at McGill University</p>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/resume.example.pdf')"></button>
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume.example.pdf')">My Resume</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Me</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn" class="icon"  onclick="location.href='https://www.linkedin.com/in/leticia-huang-794b92250'">
             </div>
         </div>
     </section>
