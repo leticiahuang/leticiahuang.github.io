@@ -1,14 +1,16 @@
 /* GENERAL */
 
 @import url('https://fonts.googleapis.com/css2?family=Taviraj:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DancingScript&display=swap');
 
 * {
     margin : 0;
     padding: 0;
+    background-color: rgb(241, 240, 234);
 }
 
 body {
-    font-family: "Taviraj", serif;;
+    font-family: "Taviraj", serif;
 }
 
 html {
@@ -16,7 +18,7 @@ html {
 }
 
 p {
-    color: rgb(91, 164, 237);
+    color: rgb(63, 62, 62);
 }
 
 /* TRANSITION */
@@ -45,17 +47,19 @@ nav {
 }
 
 a {
-    color: (91, 164, 237);
+    color: rgb(40, 138, 174);
     text-decoration: none;
-    text-decoration-color: (91, 164, 237);
+    font-size: 0.85rem;
 }
 
 a:hover{
-    color: grey;  
+    color: rgb(63, 62, 62); 
 }
 
 .logo {
     font-size: 2rem;
+    font-weight: 700;
+    font-family: "Parisienne", serif;
 }
 
 .logo:hover {
@@ -105,7 +109,7 @@ a:hover{
     padding: 10px;
     text-align: center;
     font-size: 1.5rem;
-    color: black;
+    color: (40, 138, 174);
     text-decoration: none;
     transition: all 0.3 ease-in-out;
 }
@@ -165,13 +169,6 @@ section {
     height: 80vh;
   }
   
-  .section__pic-container {
-    display: flex;
-    height: 400px;
-    width: 400px;
-    margin: auto 0;
-  }
-  
   .section__text {
     align-self: center;
     text-align: center;
@@ -179,6 +176,7 @@ section {
   
   .section__text p {
     font-weight: 600;
+    color: rgb(105, 103, 103);
   }
   
   .section__text__p1 {
@@ -193,6 +191,7 @@ section {
   .title {
     font-size: 3rem;
     text-align: center;
+    color: rgb(57, 57, 57);
   }
   
   #socials-container {
@@ -293,12 +292,6 @@ section {
 .section-container {
     gap: 4rem;
     height: 80%;
-}
-  
-.section__pic-container {
-    height: 400px;
-    width: 400px;
-    margin: auto 0;
 }
   
 /* EXPERIENCE SECTION */
