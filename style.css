@@ -159,15 +159,16 @@ section {
 #profile {
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 90vh; 
   }
   
-  .section__text {
+  .section_text {
     align-self: center;
     text-align: center;
   }
   
-  .section__text p {
+  .section_text p {
     font-weight: 500;
     color: rgb(105, 103, 103);
   }
