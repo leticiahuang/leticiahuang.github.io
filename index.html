@@ -1,24 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>leticiahuang.com</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">💐</div>    
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#experience">EXPERIENCE</a></li>
-                <li><a href="#projects">PROJECTS</a></li>
-                <li><a href="#contacts">CONTACT</a></li>
-            </ul>
-        </div>
+     <!-- nav is a list of set of navigation links -->
+    <nav id="desktop-nav"> 
+        <p class="logo">💐</p>    
+        <ul class="nav-links">
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#experience">EXPERIENCE</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#contacts">CONTACT</a></li>
+        </ul>
     </nav>
     <nav id="hamburger-nav">
         <div class="logo">💐</div> 
@@ -37,16 +33,12 @@
         </div>
     </nav>
     <section id="profile">
-        <div class="section__text">
-            <p class="section__text">Hello! I'm</p>
+        <div class="section_text">
+            <p class="section_text">Hello! I'm</p>
             <div class="title">Leticia Huang</div>
-            <p class="section__text">Student at McGill University</p>
+            <p class="section_text">Student at McGill University</p>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/resume.example.pdf')">My Resume</button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Me</button>
-            </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My LinkedIn" class="icon"  onclick="location.href='https://www.linkedin.com/in/leticia-huang-794b92250'" target="_blank"> <!--how to make this open on a new page?-->
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume.example.pdf')">resume</button>
             </div>
         </div>
     </section>
@@ -70,6 +62,9 @@
                 <div class="text-container">
                     <p>Currently looking for internship and research oppurtunities! On my free time, I love to go on walks and discover new restaurants with my friends and family. And hang out with my two cats!</p>
                 </div>
+                <div id="socials-container">
+                  <img src="./assets/linkedin.png" alt="My LinkedIn" class="icon"  onclick="location.href='https://www.linkedin.com/in/leticia-huang-794b92250'" target="_blank"> <!--how to make this open on a new page?-->
+              </div>
             </div>
         </div>
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">

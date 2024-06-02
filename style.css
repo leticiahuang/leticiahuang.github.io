@@ -1,7 +1,7 @@
 /* GENERAL */
 
 @import url('https://fonts.googleapis.com/css2?family=Taviraj:wght@300;400;500;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Parisienne&display=swap');
 
 * {
     margin : 0;
@@ -14,7 +14,7 @@ body {
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* change to auto to jump to different nav links*/
 }
 
 p {
@@ -29,20 +29,17 @@ a,
 }
 
 /* DESKTOP NAV */
-nav, 
+nav {
+    display: flex;
+    justify-content: space-around;  /*justify for main-axis, align cross-axis */
+    align-items: end;
+    height: 10vh;
+}
+
 .nav-links {
     display: flex;
-}
-
-nav {
-    justify-content: space-around;
-    align-items: center;
-    height: 17vh;
-}
-
-.nav-links {
-    gap : 2rem;
-    list-style: none;
+    column-gap: 2rem;  
+    list-style: none;  /*gets rid of bullet points */
     font-size: 1.5rems;
 }
 
@@ -53,17 +50,15 @@ a {
 }
 
 a:hover{
-    color: rgb(63, 62, 62); 
+    color: rgb(87, 87, 87); 
 }
 
 .logo {
     font-size: 2rem;
-    font-weight: 700;
-    font-family: "Parisienne", serif;
 }
 
 .logo:hover {
-    cursor: default;
+    cursor: default; /* prevent transition to text cursor when hovering */
 }
 
 /*HAMBURGER MENU */
@@ -149,7 +144,6 @@ a:hover{
 /* SECTIONS */
 
 section {
-    padding-top: 4vh;
     height: 96vh;
     margin: 0 10rem;
     box-sizing: border-box;
@@ -165,8 +159,7 @@ section {
 #profile {
     display: flex;
     justify-content: center;
-    gap: 5rem;
-    height: 80vh;
+    height: 90vh; 
   }
   
   .section__text {
@@ -207,32 +200,26 @@ section {
 }
 
 .btn {
-    font-weight: 500;
-    transition: all 300ms ease;
-    padding: 0.2rem;
-    margin-top: 1rem;
-    width: 6rem;
+    font-weight: 400;
+    font-family: "Dancing Script", serif;
+    font-size: 1.3rem;
+    color: white;
+    background: rgb(53, 53, 53);
     border-radius: 0.2rem;
-    
-}
-
-.btn-color-1, .btn-color-2 {
     border: rgb(53, 53, 53) 0.1rem solid;
+    margin-top: 1rem;
+    width: 5rem;
+    height: 1.8rem;
+    display: flex;
+    justify-content: center;
+    transition: all 300ms ease;
 }
 
 .btn-color-1:hover, 
 .btn-color-2:hover {
     cursor: pointer;
-    background: rgb(53, 53, 53);
-    color: white;
-}
-
-.btn-color-2 {
-    background: rgb(255, 255, 255)
-}
-
-.btn-color-1 {
-    background: rgb(255, 255, 255)
+    color: rgb(53, 53, 53);
+    background: white;
 }
 
 /* ABOUT SECTION */
