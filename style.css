@@ -150,22 +150,15 @@ section {
     min-height: fit-content;
   }
   
-  .section-container {
-    display: flex;
-  }
-  
 /* PROFILE SECTION */
 
 #profile {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90vh; 
-  }
-  
-  .section_text {
-    align-self: center;
     text-align: center;
+    height: 90vh; 
   }
   
   .section_text p {
@@ -228,46 +221,49 @@ section {
 #about {
     position: relative;
 }
-  
-.about-containers {
-    gap: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+
+.section-container {
+    height: 80%;
+    display: flex;
+    gap: 4rem;
+}
+
+.section-pic-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.hr {
+    width: 20%;
+    height: 100px;
+    background-color: red;
+}
+
+.section-pic-container img{
+    clip-path: circle();
+    max-width: 50%;
 }
   
-.about-details-container {
+.about-content-container {
+    display: flex;
     justify-content: center;
     flex-direction: column;
+    flex: 1;
+    margin: 9rem;
 }
-  
-.about-containers,
-.about-details-container {
-    display: flex;
-}
-  
-.about-pic {
-    border-radius: 2rem;
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 1rem;
 }
   
 .arrow {
     position: absolute;
     right: -5rem;
     bottom: 2.5rem;
-}
-  
-.details-container {
-    padding: 1.5rem;
-    flex: 1;
-    background: white;
-    border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
-    text-align: center;
-}
-  
-.section-container {
-    gap: 4rem;
-    height: 80%;
 }
   
 /* EXPERIENCE SECTION */
