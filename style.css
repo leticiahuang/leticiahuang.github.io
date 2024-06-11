@@ -144,7 +144,7 @@ a:hover{
 /* SECTIONS */
 
 section {
-    height: 96vh;
+    height: 100vh;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
@@ -217,47 +217,43 @@ section {
 }
 
 /* ABOUT SECTION */
-
 #about {
     position: relative;
 }
 
 .section-container {
-    height: 80%;
     display: flex;
+    justify-content: space-around;
     gap: 4rem;
-}
-
-.section-pic-container {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-}
-
-.hr {
-    width: 20%;
-    height: 100px;
-    background-color: red;
+    margin-left: 18vh;
+    margin-right: 15vh;
+    padding-top: 35vh;
 }
 
 .section-pic-container img{
     clip-path: circle();
-    max-width: 50%;
+    max-width: 280px;
+    margin-bottom: 1.8rem;
 }
+
+hr{
+    height: 1px;
+    background-color: rgb(53, 53, 53);
+    max-width: 95%;
+}
+/* hr {
+    height: 1px;
+    max-width: 45%;
+    background-color: rgb(53, 53, 53);
+    margin-left: 28%;
+} */
   
 .about-content-container {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     flex: 1;
-    margin: 9rem;
-}
-
-.details-container {
-    padding: 1.5rem;
-    flex: 1;
-    background: white;
-    border-radius: 1rem;
+    background: rgb(241, 240, 234);
+    margin-left: 3vh;
 }
   
 .arrow {
@@ -303,6 +299,13 @@ article {
   
 article .icon {
     cursor: default;
+}
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 1rem;
 }
   
 /* PROJECTS SECTION */
