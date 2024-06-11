@@ -40,13 +40,11 @@ nav {
     display: flex;
     column-gap: 2rem;  
     list-style: none;  /*gets rid of bullet points */
-    font-size: 1.5rems;
 }
 
 a {
     color: rgb(40, 138, 174);
     text-decoration: none;
-    font-size: 0.85rem;
 }
 
 a:hover{
@@ -230,6 +228,12 @@ section {
     padding-top: 35vh;
 }
 
+.section-pic-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .section-pic-container img{
     clip-path: circle();
     max-width: 280px;
@@ -239,7 +243,8 @@ section {
 hr{
     height: 1px;
     background-color: rgb(53, 53, 53);
-    max-width: 95%;
+    margin-right: 1%;
+    margin-left: 1%;
 }
 /* hr {
     height: 1px;
@@ -254,6 +259,8 @@ hr{
     flex: 1;
     background: rgb(241, 240, 234);
     margin-left: 3vh;
+    text-align: justify;
+    text-justify: inter-word;
 }
   
 .arrow {
