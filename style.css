@@ -34,6 +34,14 @@ nav {
     justify-content: space-around;  /*justify for main-axis, align cross-axis */
     align-items: end;
     height: 10vh;
+    
+}
+
+.nav-container {
+    z-index: 100;
+    top: 0;
+    /*position: sticky;*/
+    transition: top 0.25s;
 }
 
 .nav-links {
@@ -219,13 +227,14 @@ section {
     position: relative;
 }
 
-.section-container {
+.about-section-container {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     gap: 4rem;
     margin-left: 18vh;
     margin-right: 15vh;
-    padding-top: 35vh;
+    height: 100vh;
 }
 
 .section-pic-container{
@@ -237,7 +246,6 @@ section {
 .section-pic-container img{
     clip-path: circle();
     max-width: 280px;
-    margin-bottom: 1.8rem;
 }
 
 hr{
@@ -246,12 +254,6 @@ hr{
     margin-right: 1%;
     margin-left: 1%;
 }
-/* hr {
-    height: 1px;
-    max-width: 45%;
-    background-color: rgb(53, 53, 53);
-    margin-left: 28%;
-} */
   
 .about-content-container {
     display: flex;
@@ -263,29 +265,50 @@ hr{
     text-justify: inter-word;
 }
   
-.arrow {
-    position: absolute;
-    right: -5rem;
-    bottom: 2.5rem;
-}
-  
 /* EXPERIENCE SECTION */
   
 #experience {
     position: relative;
 }
+
+.section-title {
+    margin-top: 15vh;
+    font-size: 2rem;
+    font-weight: 400;
+    color: rgb(57, 57, 57);
+    margin-bottom: 1.6rem;
+  }
   
 .experience-sub-title {
     color: rgb(85, 85, 85);
-    font-weight: 600;
-    font-size: 1.75rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
+    background-color: white;
+    font-weight: 400;
+    font-size: 1.2rem;
 }
   
-.experience-details-container {
+.experience-section-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
+    gap: 3rem;
+}
+
+.tech-experience-box {
+    background-color: rgb(242, 237, 221);
+    border-radius: 0.2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+}
+
+.experience-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 1.5rem;
+    gap: 0.8rem;
+    background-color: white;
 }
   
 .article-container {
@@ -308,71 +331,39 @@ article .icon {
     cursor: default;
 }
 
-.details-container {
+.details-containers {
+    display: flex;
+    flex-direction: column;
     padding: 1.5rem;
     flex: 1;
+    width: 80%;
     background: white;
     border-radius: 1rem;
 }
-  
-/* PROJECTS SECTION */
-  
-#projects {
-    position: relative;
-}
-  
-.color-container {
-    border-color: rgb(163, 163, 163);
-    background: rgb(250, 250, 250);
-}
-  
-.project-img {
-    border-radius: 2rem;
-    width: 90%;
-    height: 90%;
-}
-  
-.project-title {
-    margin: 1rem;
-    color: black;
-}
-  
-.project-btn {
-    color: black;
-    border-color: rgb(163, 163, 163);
-}
-
 
 /*CONTACT*/
 
 #contact {
+    position: relative;
+    height: 85vh;
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    height: 70vh;
-}
-  
-.contact-info-upper-container {
-    display: flex;
-    justify-content: center;
-    border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
-    background: (250, 250, 250);
-    margin: 2rem auto;
-    padding: 0.5rem;
-}
-  
-.contact-info-container {
-    display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
-    margin: 1rem;
 }
   
-.contact-info-container p {
-    font-size: larger;
+.contact-section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+  
+.way-to-contact {
+    display: flex;
+    justify-content: start;
+    gap: 0.5rem;
+    margin: 1rem;
 }
   
 .contact-icon {
@@ -382,14 +373,56 @@ article .icon {
 .email-icon {
     height: 2.5rem;
 }
+
+.arrow {
+    position: absolute;
+    height: 4vh;
+    width: 6vw;
+    margin-left: 80vw;
+}
+
+textarea {
+    margin-top: 1rem;
+    resize: none;
+    width: 550px;
+    height: 150px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
   
 /* FOOTER SECTION */
   
 footer {
-    height: 26vh;
-    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    height: 15vh;
+    background-color: rgb(63, 62, 62);
 }
   
-footer p {
-    text-align: center;
+.footer-color {
+    color: rgb(241, 240, 234);
+    background-color: rgb(63, 62, 62);
+}
+
+.footer-color a {
+    color: rgb(241, 240, 234);
+    background-color: rgb(63, 62, 62);
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(63, 62, 62);
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-content: end;
 }

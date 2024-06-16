@@ -7,15 +7,17 @@
 </head>
 <body>
      <!-- nav is a list of set of navigation links -->
-    <nav id="desktop-nav"> 
+  <div class="nav-container">
+     <nav id="desktop-nav"> 
         <p class="logo">💐</p>    
         <ul class="nav-links" style="font-size: 0.85rem">
             <li><a href="#about">ABOUT</a></li>
             <li><a href="#experience">EXPERIENCE</a></li>
-            <li><a href="#projects">PROJECTS</a></li>
-            <li><a href="#contacts">CONTACT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
         </ul>
     </nav>
+  </div>
+  <div class="nav-container">
     <nav id="hamburger-nav">
         <div class="logo">💐</div> 
         <div class="hamburger-menu">
@@ -27,11 +29,11 @@
             <div class="menu-links">
                 <li><a href="#about" onclick="toggleMenu()">ABOUT</a></li>
                 <li><a href="#experience" onclick="toggleMenu()">EXPERIENCE</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">PROJECTS</a></li>
                 <li><a href="#contacts" onclick="toggleMenu()">CONTACT</a></li>
             </div>
         </div>
     </nav>
+  </div>
     <section id="profile">
             <div class="section_text">Hello! I'm</div>
             <div class="title">Leticia Huang</div>
@@ -39,265 +41,109 @@
             <button class="btn btn-color-2" onclick="window.open('./assets/resume.example.pdf')">resume</button>
     </section>
     <section id="about">
-        <div class="section-container">
+        <div class="about-section-container">
           <div class="section-pic-container">
             <img src="./assets/headshot.png" alt="headshot"/>
           </div>
           <div class="about-content-container">
             <hr style="margin-bottom: 1rem">
               <h2 style="font-weight: 350">Rising 3rd year student at McGill University studying <span style="font-weight: 1000">Computer Science</span> with a focus in Artifical Intelligence.</h2>
-              <p>When not in Montreal for school, I am based in Vancouver but also grew up in Taiwan and Japan! At school, I am involved in <span><a href="https://mcgill.hack4impact.org/">Hack4Impact</a></span>, <span><a href="https://www.instagram.com/witmcgill/">Women in Tech</a></span>, and <span><a href="https://susmcgill.ca/">Science Undergraduate Society</a></span>. I am interested in app development and product management and am developing skills for these domains through self-learning and extracurriculars. I am also currently self-learning front-end development. During my free time, I love being with friends and family and also everything food! Check out my cooking Instagram. Thank you for visiting this page &#40;: </p>
+              <p>When not in Montreal for school, I am based in Vancouver but also grew up in Taiwan and Japan! At school, I am involved in <span><a href="https://mcgill.hack4impact.org/">Hack4Impact</a></span>, <span><a href="https://www.instagram.com/witmcgill/">Women in Tech</a></span>, and <span><a href="https://susmcgill.ca/">Science Undergraduate Society</a></span>. I am interested in app development and product management and am developing skills for these domains through self-learning and extracurriculars. I am also currently self-learning front-end development. During my free time, I love being with friends and family and also everything food! Check out my cooking <span><a href="https://www.instagram.com/leticiasfood/">Instagram</a></span>. Thank you for visiting this page :&#41; </p>
               <hr style="margin-top: 1rem">
           </div>
         </div>
     </section>
     <section id="experience">
-        <p class="class_text_p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets//checkmark.png" alt="experience icon"
-                            class="icon"
-                            > 
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets//checkmark.png" alt="experience icon"
-                            class="icon"
-                            > 
-                            <div>
-                                <h3>Java</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets//checkmark.png" alt="experience icon"
-                            class="icon"
-                            > 
-                            <div>
-                                <h3>Python</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets//checkmark.png" alt="experience icon"
-                            class="icon"
-                            > 
-                            <div>
-                                <h3>Bash Scripting</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets//checkmark.png" alt="experience icon"
-                            class="icon"
-                            > 
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets//checkmark.png" alt="experience icon"
-                            class="icon"
-                            > 
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Backend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets//checkmark.png" alt="experience icon"
-                            class="icon"
-                            > 
-                            <div>
-                                <h3>SQL</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets//checkmark.png" alt="experience icon"
-                            class="icon"
-                            > 
-                            <div>
-                                <h3>C</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets//checkmark.png" alt="experience icon"
-                            class="icon"
-                            > 
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets//checkmark.png" alt="experience icon"
-                            class="icon"
-                            > 
-                            <div>
-                                <h3>VSCode</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets//checkmark.png" alt="experience icon"
-                            class="icon"
-                            > 
-                            <div>
-                                <h3>Git</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets//checkmark.png" alt="experience icon"
-                            class="icon"
-                            > 
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
-    </section>
-    <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-          <div class="about-containers">
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./assets/project-1.png"
-                  alt="Project 1"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">Project One</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Live Demo
-                </button>
-              </div>
-            </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./assets/project-2.png"
-                  alt="Project 2"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">Project Two</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Live Demo
-                </button>
-              </div>
-            </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./assets/project-3.png"
-                  alt="Project 3"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">Project Three</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Live Demo
-                </button>
-              </div>
-            </div>
+      <div class="experience-section-container">
+      <h2 class="section-title">Experience</h2>
+        <div class="details-containers">
+          <h3 class="experience-sub-title">Technical Skills</h3>
+          <div class="experience-list">
+            <div class="tech-experience-box">Java</div>
+            <div class="tech-experience-box">Python</div>
+            <div class="tech-experience-box">C</div>
+            <div class="tech-experience-box">Bash</div>
+            <div class="tech-experience-box">Assembly Language</div>
+            <div class="tech-experience-box">HTML</div>
+            <div class="tech-experience-box">CSS</div>
+            <div class="tech-experience-box">Git</div>
+            <div class="tech-experience-box">Linux/Unix</div>
           </div>
         </div>
-        <img
-          src="./assets/arrow.png"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='./#contact'"
-        />
+        <div class="details-containers">
+          <h3 class="experience-sub-title">Courses</h3>
+          <div class="experience-list">
+            <div class="tech-experience-box">COMP 202: Foundations of Programming</div>
+            <div class="tech-experience-box">COMP 206: Intro to Software Systems</div>
+            <div class="tech-experience-box">COMP 250: Intro to Computer Science</div>
+            <div class="tech-experience-box">COMP 251: Algorithms & Data Structures</div>
+            <div class="tech-experience-box">COMP 273: Intro to Computer Systems</div>
+            <div class="tech-experience-box">MATH 133: Linear Algebra and Geometry</div>
+            <div class="tech-experience-box">Calculus I/II/III</div>
+            <div class="tech-experience-box">MATH 240: Discrete Structures</div>
+          </div>
+        </div>
+        <div class="details-containers">
+          <h3 class="experience-sub-title">Extracurriculars & Awards</h3>
+          <div class="experience-list">
+            <div class="tech-experience-box">Hack4Impact VP Events</div>
+            <div class="tech-experience-box">Women in Tech External Portfolio</div>
+            <div class="tech-experience-box">McGill AI Society Ethics Hackathon: 1st Place</div>
+            <div class="tech-experience-box">First Year Science Undergraduate Society: President (2022)</div>
+            <div class="tech-experience-box">Product Management Association: First Year Rep</div>
+          </div>
+        </div>
+    </div>
     </section>
     <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-          <div class="contact-info-container">
-            <img
-              src="./assets/email.png"
-              alt="Email icon"
-              class="icon contact-icon email-icon"
-            />
-            <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+        <div class="contact-section-container">
+          <h2 style="font-weight: 450; text-align: center;">Get in touch!</h2>
+          <div class="send-contact-container">
+            <p style="text-align: center; color: rgb(122, 122, 122);margin-bottom: 0.5rem">Send me a message @leticia.huang@mail.mcgill.ca</p>
+              <form>
+                Your name: <input type="text" required><br>
+                Your email: <input type="text" required><br>
+                <textarea name="comment">let's chat...</textarea><br>
+                <button type="submit">send</button><br>
+              </form>
           </div>
-          <div class="contact-info-container">
-            <img
-              src="./assets/linkedin.png"
-              alt="LinkedIn icon"
-              class="icon contact-icon"
-            />
-            <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          <hr>
+          <div class="contact-way-container">
+            <div class="way-to-contact">
+              <img
+                src="./assets/email.png"
+                alt="Email icon"
+                class="icon contact-icon email-icon"
+              />
+              <p><a href="leticia.huang@mail.mcgill.ca">leticia.huang@mail.mcgill.ca</a></p>
+            </div>
+            <div class="way-to-contact">
+              <img
+                src="./assets/linkedin.png"
+                alt="LinkedIn icon"
+                class="icon contact-icon"
+              />
+              <p><a href="www.linkedin.com/in/leticia-huang">My LinkedIn</a></p>
+            </div>
           </div>
-        </div>
+      </div>
+        <img
+            src="./assets/up-arrow.png"
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./#profile'"
+          />
       </section>
       <footer>
-        <nav>
-          <div class="nav-links-container">
-            <ul class="nav-links">
+        <nav class="footer-nav"> 
+          <div>
+            <ul class="nav-links footer-color">
               <li><a href="#about">About</a></li>
               <li><a href="#experience">Experience</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
         </nav>
-        <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+        <p class="copyright footer-color" style="font-size: 13px;">&#169; Leticia Huang 2024</p>
       </footer>
       <script src="script.js"></script>
     </body>
