@@ -357,6 +357,10 @@ article .icon {
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
+    width: 60vw;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 60vw;
 }
   
 .way-to-contact {
@@ -382,16 +386,74 @@ article .icon {
 }
 
 textarea {
-    margin-top: 1rem;
     resize: none;
-    width: 550px;
-    height: 150px;
+    width: 100%;
+    height: 200px;
+    border-radius: 0.1rem;
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: rgb(187,187,187);
 }
 
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 0.9rem;
+    gap: 0.2rem;
+    background-color: rgb(173, 172, 172);
+}
+
+form button {
+    border-radius: 0.2rem;
+    border-style: solid;
+    border-color: rgb(182, 181, 181);
+    transition: all 300ms ease;
+    background-color: rgb(214, 211, 211);
+    padding: 2px;
+    width: 3rem;
+    margin-left: 45%;
+    margin-top: 0.6rem;
+}
+
+form button:hover {
+    cursor: pointer;
+    background: rgb(227, 225, 216);
+} 
+
+input {
+    border-radius: 0.1rem;
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: rgb(187,187,187);
+    height: 1.5rem;
+    width: 100%;
+}
+
+label {
+    font-size: 0.8rem;
+    color: rgb(82, 81, 81);
+}
+
+.form-div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    width: 50%;
+}
+
+.send-contact-container {
+    width: 60%;
+}
+
+.send-contact-container hr {
+    height: 3px; 
+    background-color: rgb(198, 197, 197); 
+    border: none; 
+    width: 40%; 
+    margin-left: 30%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
   
 /* FOOTER SECTION */
