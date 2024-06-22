@@ -196,22 +196,19 @@ section {
 .btn-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 0.7rem;
 }
 
 .btn {
     font-weight: 400;
-    font-family: "Dancing Script", serif;
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: white;
     background: rgb(53, 53, 53);
     border-radius: 0.2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     margin-top: 1rem;
-    width: 5rem;
-    height: 1.8rem;
-    display: flex;
-    justify-content: center;
+    padding: 0rem 0.5rem;
     transition: all 300ms ease;
 }
 
@@ -239,13 +236,12 @@ section {
 
 .section-pic-container{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    max-width: 40%;
 }
 
 .section-pic-container img{
     clip-path: circle();
-    max-width: 280px;
+    max-width: 100%;
 }
 
 hr{
@@ -258,7 +254,6 @@ hr{
 .about-content-container {
     display: flex;
     flex-direction: column;
-    flex: 1;
     background: rgb(241, 240, 234);
     margin-left: 3vh;
     text-align: justify;
@@ -272,11 +267,9 @@ hr{
 }
 
 .section-title {
-    margin-top: 15vh;
     font-size: 2rem;
     font-weight: 400;
     color: rgb(57, 57, 57);
-    margin-bottom: 1.6rem;
   }
   
 .experience-sub-title {
@@ -301,6 +294,7 @@ hr{
     padding-left: 1rem;
     padding-right: 1rem;
     text-align: center;
+    font-size: 1rem;
 }
 
 .experience-list {
@@ -335,7 +329,6 @@ article .icon {
     display: flex;
     flex-direction: column;
     padding: 1.5rem;
-    flex: 1;
     width: 80%;
     background: white;
     border-radius: 1rem;
@@ -350,14 +343,14 @@ article .icon {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 1rem;
 }
   
 .contact-section-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
+    align-items: center;
     gap: 2rem;
     width: 60vw;
 }
@@ -379,7 +372,7 @@ article .icon {
 textarea {
     resize: none;
     width: 100%;
-    height: 200px;
+    height: 27vh;
     border-radius: 0.1rem;
     border-style: solid;
     border-width: 1.5px;
@@ -405,7 +398,6 @@ form button {
     transition: all 300ms ease;
     background-color: rgb(214, 211, 211);
     padding: 2px;
-    width: 3rem;
     margin: auto;
     margin-top: 1rem;
 }
@@ -482,6 +474,7 @@ footer {
 .footer-color a {
     color: rgb(241, 240, 234);
     background-color: rgb(63, 62, 62);
+    border: solid rgb(63, 62, 62);
 }
 
 .footer-nav {
