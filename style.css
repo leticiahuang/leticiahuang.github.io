@@ -225,9 +225,8 @@ section {
     justify-content: space-around;
     align-items: center;
     gap: 4rem;
-    margin-left: 18vh;
-    margin-right: 15vh;
     height: 100vh;
+    margin: 0vh 10vh;
 }
 
 .section-pic-container{
@@ -251,7 +250,6 @@ hr{
     display: flex;
     flex-direction: column;
     background: rgb(241, 240, 234);
-    margin-left: 3vh;
     text-align: justify;
     text-justify: inter-word;
 }
@@ -478,6 +476,10 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(63, 62, 62);
+}
+
+footer li {
     background-color: rgb(63, 62, 62);
 }
 

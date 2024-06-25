@@ -14,13 +14,18 @@
     #desktop-nav {
       display: none;
     }
+
     #hamburger-nav {
       display: flex;
     }
+
     #experience {
-      height: 120vh;
-      padding: 10vh 0;
+      /*height: 120vh;
+      padding: 10vh 0;*/
+      display: block;
+      overflow: auto;
     }
+
     #profile {
       height: 90vh;
       margin-bottom: 6rem;
@@ -32,7 +37,7 @@
     }
 
     #contact
-    p, label, button, a, .copyright, .btn{
+    p, label, button, a, .copyright, .btn {
       font-size: 1.5rem;
     }
 
@@ -50,17 +55,15 @@
     .about-section-container {
       flex-direction: column;
       justify-content: center;
-      margin-left: 2rem;
-      margin-right: 2rem;
     }
 
     .about-section-container p{
-      font-size: 30px;
+      font-size: 20px;
     }
 
     .about-section-container h2{
       font-weight: 350;
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
 
     .experience-sub-title {
@@ -81,7 +84,7 @@
     }
 
     #contact {
-      height: 85vh;
+      height: 100vh;
     }
 
     footer {
@@ -89,7 +92,7 @@
     }
   }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1000px) {
     #profile {
       height: 90vh;
       margin-bottom: 0;
