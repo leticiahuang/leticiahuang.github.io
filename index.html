@@ -100,18 +100,18 @@
         <h2 class="section-title" style="text-align: center;">Get in touch!</h2>
         <div class="send-contact-container">
           <p style="text-align: center; color: rgb(102, 102, 102);margin-bottom: 0.5rem">Send me a message @leticia.huang@mail.mcgill.ca</p>
-            <form>
+            <form action="form.php" method="POST">
               <div class="form-div">
-                <label>Name: </label>
-                <input type="text" required>
+                <label for="name">Name: </label>
+                <input name="name" id="name" type="text" required>
               </div>
               <div div class="form-div">
-                <label>Email: </label>
-                <input type="text" required>
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email"required>
               </div>
               <div div class="form-div"> 
-                <label>Let's chat... </label>
-                <textarea name="comment"></textarea>
+                <label for="comment">Let's chat... </label>
+                <textarea name="comment" id="comment"></textarea>
                 <button type="submit">send</button>
               </div>
             </form>
